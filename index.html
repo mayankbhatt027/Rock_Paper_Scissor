@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link href="index.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="game">
+
+    <div class="Rps">
+        <header>
+            <h1>
+                <span>ROCK</span>
+                <span>PAPER</span>
+                <span>SCISSOR</span>
+            </h1>
+    
+    <div class="computerScoreBoard">
+        <h4 id="comp-score">COMPUTER SCORE</h4>
+        <p id="cs">0</p>     
+    </div>
+     
+    <div class="userScoreBoard">
+        <h4 id="user-score">YOUR SCORE</h4>
+        <p id="us">0</p>  
+    </div>
+ 
+</header>
+
+<main id="main">
+
+    <button class="btn-circle btn-rock pick"
+    dchoice="rock">
+    <span class="wrapper">
+    <img src="./assets/rock.svg" alt="rock
+    icon" />
+    </span>
+    </button>
+    
+    <button class="btn-circle btn-scissor pick"
+    dchoice="scissor">
+    <span class="wrapper">
+    <img src="./assets/scissor.svg"
+    alt="scissors icon" />
+    </span>
+    </button>
+    
+    <button class="btn-circle btn-paper pick"
+    dchoice="paper">
+    <span class="wrapper">
+    <img src="./assets/paper.svg" alt="paper icon"
+    />
+    </span>
+    </button>
+    
+    </main>
+
+<!-- <div class="rules-modal">
+    <div class="modal">
+        
+    </div>/
+</div> -->
+
+<button id="rules-button" onclick="openPopup()">RULES</button>
+<button id="next-button" onclick="next()" >NEXT</button>
+
+
+
+
+
+<div class="select" id="select">
+    <div>
+        <h2>YOU PICKED</h2>
+        <button class="btn-circle btn-paper" id="user_select">
+            <span class="wrapper">
+        <img src="./assets/paper.svg" alt="paper icon"/>
+    </span>
+    </button>
+    </div>
+
+    <div class="go-down">
+        <p class="=bigText">
+            <span id="winner">WIN</span>
+        </p>
+        <!-- <h2>AGAINST PC</h2> -->
+
+        <button class="btn " id="reset">PLAY AGAIN</button>
+    </div>
+
+
+    <div>
+        <h2>PC PICKED</h2>
+        <button class="btn-circle btn-rock" id="computer_select">
+            <span class="wrapper">
+            <img src="./assets/rock.svg" alt="paper icon" />
+        </span>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+
+
+    </div>
+
+</div>
+    <div id="popup" >
+        <h4 >GAME RULES</h4>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+        <li>If both players lay down the same hand, each player lays down another hand.</li>
+        <button onclick="closePopup()"><img src="assets/e.jpg" width="20"></button>
+    </div>
+
+
+    <div id="cong">
+        <div id="top-images">
+            <img id="Star1" src="assets/Star1.svg"></img> 
+            <img id="Star2" src="assets/Star2.svg"></img> 
+            <img id="Star3" src="assets/Star3.svg"></img> 
+            <img id="Star4" src="assets/Star4.svg"></img> 
+            <img id="Star5" src="assets/Star5.svg"></img> 
+            <img id="Star6" src="assets/Star6.svg"></img> 
+            <img id="Star7" src="assets/Star7.svg"></img> 
+            <img id="Star9" src="assets/Star9.svg"></img> 
+            <img id="Vector" src="assets/Vector.svg"></img> 
+
+        </div>
+    
+        <div id="dialog">
+            <h5>HURRAY!!</h5>
+        <p id="won">YOU WON THE GAME</p>
+        <button class="btn " id="reset" onclick="reload()">PLAY AGAIN</button>
+        </div>
+        <button id="rules-button" onclick="openPopup()">RULES</button>
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+</html>
